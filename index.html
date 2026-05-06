@@ -2,18 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .cdiv{
+            margin-top: 10px;
+            border: 2px solid black;
+            border-image: linear-gradient(to right,red,yellow,blue) 1;
+            border-radius: 2px;
+            position:relative;
+            color:white;
+            top: 4px;
+            margin-left: 20px;
+            margin-right: 30px;
+            padding-bottom: 10px;
+            
+
+            
+        }
+        .mdiv
+        {
+            position:relative;
+        
+            
+        }
+        .back-video{
+            position:absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index:-1; 
+        }
         table,tr,td,th{
             border: 2px solid;
               border-radius: 2px;  
         
         }
+        .an{
+            margin-left: 15px;
+            margin-top: 10PX;
+        }
+       .one{
+        margin-left: 5%;
+        width: 175px;
+        height: 175px;
+        margin-bottom: 30px;
+       }
+        
         </style>
 </head>
 <body>
-    <nav="">
+    <div class="mdiv">
+    <!-- < div>class="cdiv"> -->
+
+    <video controls autoplay muted loop class="back-video"> 
+       
+        <source src="https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4" >
+        </video>
+
+       <!-- nav bar -->
+      <div class="cdiv">
+         <div class="an">
+        <nav="#">
 
         <a href="#about">About|</a>
         <a href="#fea">features|</a>
@@ -21,20 +74,50 @@
         <a href="#gall">Gallery|</a>
         <a href="#watch">Review|</a>
         <a href="#Faq">FAQ|</a>
-        <a href="#cont">CONTACT</a>
-<section>
-        <h2 id="about">About ECO Bottle</h2>
+        <a href="#cont">CONTACT</a></nav>
+</div>    
+
+
+        <!-- heading -->
+         <section>
+        <h2 style="margin-left: 15px;" id="about">About ECO Bottle</h2>
         
-        <h3>Stay Hydrated,Save the planet</h3>
+        <h3 style="margin-left: 15px;">Stay Hydrated,Save the planet</h3>
         
-                <p style="color: blue;"><u>order now</u></p>
                 
                 <marquee>🎉 Big Summer Sale! Get your EcoBottle now for just $15 Limited Time Offer🎉</marquee>
-                <P>About EcoBottle</P>
-                <p>The eco bottle is reusable water bottle designed to reduce plastic waste while keeping your drinks fresh all day
-                .Perfect for travel,work,and fitness.</p>
                 </section>
-<section>
+
+                <section>
+      <h2 id="gall" style="margin-left: 15px;">Gallery</h2>
+      <div style="padding-left: 25px;">
+      <img  src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="" width="175px" height="175px" style="margin-left: 10px; margin-bottom: 30px;">
+<img class="one" src="https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg" alt="" width="175px">
+<img class="one"  src="//i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg" alt="" width="175px">
+<img class="one" src="https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg" alt="" width="175px">
+<img class="one"src="https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg" alt="" width="175px">
+    </div>
+</section>
+
+</div>
+
+    <section>
+        <h2 id="Faq" style="color: yellow;margin-left: 20px;">Customer Reviews</h2>
+        <p style="color: yellow;margin: 20px;">"Best  Water bottle I've ever owned!"<br></p>
+        <p style="margin-left: 300px;color: yellow;">-sarah</p>
+        <p style="color: yellow; margin-left: 20px;">"Keep my drinks cold for hours"</p>
+        <p style="color: yellow;margin-left: 300px; padding-bottom: 30px; ">-james</p>
+        
+    </section>
+    </div>
+
+
+
+    
+        <h2 id="about">About ECO Bottle</h2>
+      <p> The eco bottle is reusable water bottle designed to reduce plastic waste while keeping your drinks fresh all day
+                .Perfect for travel,work,and fitnes</p>
+      <section>
                 <h2 id="fea">Key Features</h2>
                 <ul>
                     <li>BPA free stainless steel</li>
@@ -50,11 +133,11 @@
                         <th>price</th>
                         <td>$15</td>
                             </tr>
-<tr>
+                            <tr>
                         <th>Mterial</th>
                         <td>stainless steel</td>
                             </tr>
-<tr>
+                            <tr>
                         <th>size</th>
                         <td>750ml</td>
                             </tr>
@@ -63,30 +146,14 @@
                         <td>1 year</td>
                             </tr>
                             </table>
-    </section>
-<section>
-<h2 id="gall">Gallery</h2>
-<img src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="" width="200px" height="200px">
-<img src="https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg" alt="" width="200px">
-<img src="https://i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg" alt="" width="200px">
-<img src="https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg" alt="" width="200px">
-<img src="https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg" alt="" width="200px">
+    </section> 
     </section>
     <section>
-       <h2 id="watch">watch our product in action</h2>
-      <p> 🎥Discover how Eco bottle keeps your drinks fresh and helps save the palnet!</p>
-       <iframe src=" https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4" frameborder="0"></iframe>
-        <p><b>Tagline</b>:"Ecobottle-Hydration meets Sustainability"</p>
-    </section>
-
-    <section>
-        <h1 id="Faq">Customer Reviews</h1>
-        <p>"Best  Water bottle I've ever owned!"<br></p>
-        -sarah<br>
+      
         <p>"Keep my drinks cold for hours"<br></p>
         -james<BR>
         <h2>Frequently asked questions</h2>
-        <ul>
+        <ul type="circle">
          <li>Is the EcO Bottle Dishwasher safe?</li>
          <li>Does it keep drinks hot</li>
          </ul>
@@ -102,7 +169,6 @@
          <p>contact:support@ecobottle.com</p>
          <p>&copy;2026 Eco bottle Inc.|All rights are reserved</p>
          </section>
-
 
 </body>
 </html>
